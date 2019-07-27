@@ -91,6 +91,13 @@
     "imageUrl": "https://www.primehonda128.com/assets/stock/colormatched_01/white/640/cc_2019hoc02_01_640/cc_2019hoc020087_01_640_wx.jpg?height=400"
   },
   {
+    "id": 630,
+    "makeId": 60,
+    "name": "Jazz",
+    "price": 20000,
+    "imageUrl": "https://www.honda.com.au/content/dam/honda/en/auto/models/jazz/2020/vti/showroom-hero-tablet-jazz-vti-rr.jpg"
+  },
+  {
     "id": 710,
     "makeId": 70,
     "name": "Camry",
@@ -124,5 +131,19 @@
     "name": "Aventador",
     "price": 1000000,
     "imageUrl": "https://www.goauto.com.au/images/6c953d53c85549bddc1955e9f14b275e65c4b8d7.jpg"
+  },
+  {
+    "id": 1210,
+    "makeId": 120,
+    "name": "SLS AMG",
+    "price": 656444,
+    "imageUrl": "https://cdn04.carsforsale.com/3/250381/14996584/972928908.jpg"
+  },
+  {
+    "id": 1310,
+    "makeId": 130,
+    "name": "911 Carrera",
+    "price": 316600,
+    "imageUrl": "https://car-images.bauersecure.com/pagefiles/84010/1040x585/911_carrerat_050.jpg"
   }
 ]
