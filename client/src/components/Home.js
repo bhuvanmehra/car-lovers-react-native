@@ -15,7 +15,6 @@ class Home extends React.Component {
         {({ loading, error, data }) => {
           if (loading) return <View><Text>Loading...</Text></View>;
           if (error) return <View><Text>Something went wrong. Please try again.</Text></View>;
-          console.log('data.CarOfTheWeek.review', data.CarOfTheWeek.review);
 
           return (
             <Card>
