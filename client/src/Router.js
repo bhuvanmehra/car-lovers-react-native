@@ -19,7 +19,7 @@ class RouterComponent extends React.Component {
   render() {
     const { os } = this.state;
     return (
-      <Router sceneStyle={os === 'ios' ? { paddingTop: 65 } : ''}>
+      <Router sceneStyle={os === 'ios' ? { paddingTop: 65 } : { paddingTop: 25 }}>
         <Scene key="main">
           <Scene
             rightTitle="Search"
