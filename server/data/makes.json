@@ -18,5 +18,29 @@
   {
     "id": 50,
     "name": "Mazda"
+  },
+  {
+    "id": 60,
+    "name": "Honda"
+  },
+  {
+    "id": 70,
+    "name": "Toyota"
+  },
+  {
+    "id": 80,
+    "name": "Mclaren"
+  },
+  {
+    "id": 90,
+    "name": "Ferrari"
+  },
+  {
+    "id": 100,
+    "name": "Volkswagen"
+  },
+  {
+    "id": 110,
+    "name": "Lamborghini"
   }
 ]
