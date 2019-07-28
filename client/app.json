@@ -23,6 +23,7 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.mehrasoft.carLovers",
       "supportsTablet": true
     },
     "android": {
