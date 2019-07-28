@@ -37,21 +37,21 @@
   {
     "id": 300,
     "makeId": 30,
-    "name": "1",
+    "name": "Series 1",
     "price": 83000,
     "imageUrl": "https://storage.googleapis.com/bmw-storage/bmw-aus/models/series1-2019/banner-video.jpg"
   },
   {
     "id": 310,
     "makeId": 30,
-    "name": "2",
+    "name": "Series 2",
     "price": 125000,
     "imageUrl": "https://www.bmw.com.au/content/dam/bmw/common/all-models/2-series/coupe/2019/inspire/bmw-2-series-coupe-inspire-highlight-desktop-01.jpg"
   },
   {
     "id": 320,
     "makeId": 30,
-    "name": "3",
+    "name": "Series 3",
     "price": 150000,
     "imageUrl": "https://www.bmw.com.au/content/dam/bmw/common/all-models/3-series/sedan/2018/inspire/bmw-3series-3er-inspire-highlight-01-desktop-tablet.jpg"
   },
@@ -126,6 +126,13 @@
     "imageUrl": "https://photos7.motorcar.com/used-2012-bugatti-veyron-grandsport-8431-15728940-1-1024.jpg"
   },
   {
+    "id": 1020,
+    "makeId": 100,
+    "name": "Bugatti Chiron",
+    "price": 2700000,
+    "imageUrl": "https://financesonline.com/uploads/2018/03/bugatti_chiron_2018-edited.jpg"
+  },
+  {
     "id": 1110,
     "makeId": 110,
     "name": "Aventador",
@@ -133,10 +140,24 @@
     "imageUrl": "https://www.goauto.com.au/images/6c953d53c85549bddc1955e9f14b275e65c4b8d7.jpg"
   },
   {
+    "id": 1120,
+    "makeId": 110,
+    "name": "Lamborghini Veneno Roadster",
+    "price": 4500000,
+    "imageUrl": "https://s.financesonline.com/uploads/2018/03/Lamborghini-Veneno-Roadster-edited.jpg"
+  },
+  {
     "id": 1210,
     "makeId": 120,
     "name": "SLS AMG",
     "price": 656444,
     "imageUrl": "https://cdn04.carsforsale.com/3/250381/14996584/972928908.jpg"
+  },
+  {
+    "id": 1310,
+    "makeId": 130,
+    "name": "Pagani Huayra BC",
+    "price": 2800000,
+    "imageUrl": "https://financesonline.com/uploads/2018/03/pagani_huayra-edited.jpg"
   }
 ]
