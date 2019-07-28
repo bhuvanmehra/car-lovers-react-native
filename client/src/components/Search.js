@@ -41,6 +41,7 @@ class Search extends React.Component {
 
   render() {
     const { selectedMake, selectedModel } = this.state;
+    const { textStyle } = styles;
 
     return (
       <Query query={query}>
@@ -55,7 +56,9 @@ class Search extends React.Component {
               </CardSection>
               <CardSection>
                 <Picker
-                  style={{ flex: 1 }}
+                  style={{ flex: 1 , color: '#DADADA' }}
+                  itemStyle={{ backgroundColor: 'lightgrey', marginLeft: 0, paddingLeft: 15 }}
+                  itemTextStyle={{ fontSize: 18, color: 'white' }}
                   selectedValue = {selectedMake} onValueChange = {this.updateMake}
                 >
                   <Picker.Item label='Please select' value='Please select' />
@@ -64,7 +67,9 @@ class Search extends React.Component {
               </CardSection>
               <CardSection>
                 <Picker
-                  style={{ flex: 1 }}
+                  style={{ flex: 1, color: '#DADADA' }}
+                  itemStyle={{ backgroundColor: 'lightgrey', marginLeft: 0, paddingLeft: 15 }}
+                  itemTextStyle={{ fontSize: 18, color: 'white' }}
                   selectedValue = {selectedModel} onValueChange = {this.updateModel}
                 >
                   <Picker.Item label='Please select' value='Please select' />
@@ -96,7 +101,10 @@ const styles = {
   pickerTextStyle: {
     fontSize: 18,
     paddingLeft: 20
-  }
+  },
+  textStyle: {
+    color: '#DADADA',
+  },
 };
 
 export default Search;

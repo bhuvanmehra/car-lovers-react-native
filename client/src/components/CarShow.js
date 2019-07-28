@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Query } from 'react-apollo';
-import { View , Text, Image } from 'react-native';
+import { View , Text, Image, Modal } from 'react-native';
 import { Card, CardSection } from './common';
 import query from '../queries/fetchCarByID';
 
@@ -10,7 +10,8 @@ export const currencyFormatter = (num = 0) =>
 class CarShow extends Component {
   render() {
     const {
-      imageStyle
+      imageStyle,
+      textStyle
     } = styles;
 
     return (
@@ -29,8 +30,12 @@ class CarShow extends Component {
               </CardSection>
               <CardSection>
                 <View>
-                  <Text>{data.Car.name}</Text>
-                  <Text>{currencyFormatter(data.Car.price)}</Text>
+                  <Text style={textStyle}>
+                    {data.Car.name}
+                  </Text>
+                  <Text style={textStyle}>
+                    {currencyFormatter(data.Car.price)}
+                  </Text>
                 </View>
               </CardSection>
             </Card>
@@ -47,6 +52,9 @@ const styles = {
     height: 198,
     flex: 2,
     width: null
+  },
+  textStyle: {
+    color: '#DADADA',
   },
 }
 

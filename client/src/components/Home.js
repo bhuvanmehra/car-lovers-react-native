@@ -7,7 +7,8 @@ import query from '../queries/CarOfTheWeek';
 class Home extends React.Component {
   render() {
     const {
-      imageStyle
+      imageStyle,
+      textStyle,
     } = styles;
 
     return (
@@ -24,7 +25,9 @@ class Home extends React.Component {
                   source={{ uri: data.CarOfTheWeek.model.imageUrl }}
                 />
                 <View>
-                  <Text>{data.CarOfTheWeek.review}</Text>
+                  <Text
+                    style={textStyle}
+                  >{data.CarOfTheWeek.review}</Text>
                 </View>
               </CardSection>
             </Card>
@@ -51,6 +54,9 @@ const styles = {
   thumbnailStyle: {
     height: 50,
     width: 50
+  },
+  textStyle: {
+    color: '#DADADA',
   },
   thumbnailContainerStyle: {
     justifyContent: 'center',
