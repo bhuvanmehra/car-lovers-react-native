@@ -17,8 +17,8 @@ class CarShow extends Component {
     return (
       <Query query={query} variables={{ id: parseInt(this.props.id) }}>
         {({ loading, error, data }) => {
-          if (loading) return <View><Text>Loading...</Text></View>;
-          if (error) return <View><Text>Something went wrong. Please try again.</Text></View>;
+          if (loading) return <View><Text style={textStyle}>Loading...</Text></View>;
+          if (error) return <View><Text style={textStyle}>Sorry something went wrong. Please try again.</Text></View>;
 
           return (
             <Card>
