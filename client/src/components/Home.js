@@ -9,13 +9,14 @@ class Home extends React.Component {
     const {
       imageStyle,
       textStyle,
+      queryTextStyle,
     } = styles;
 
     return (
       <Query query={query}>
         {({ loading, error, data }) => {
-          if (loading) return <View><Text style={textStyle}>Loading...</Text></View>;
-          if (error) return <View><Text style={textStyle}>Sorry something went wrong. Please try again.</Text></View>;
+          if (loading) return <View><Text style={queryTextStyle}>Loading...</Text></View>;
+          if (error) return <View><Text style={queryTextStyle}>Sorry something went wrong. Please try again.</Text></View>;
 
           return (
             <Card>
@@ -74,6 +75,10 @@ const styles = {
     marginTop: 20,
     fontSize: 25,
     marginBottom: 20,
+  },
+  queryTextStyle: {
+    color: '#DADADA',
+    marginLeft: 20,
   }
 };
 

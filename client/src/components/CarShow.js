@@ -11,14 +11,15 @@ class CarShow extends Component {
   render() {
     const {
       imageStyle,
-      textStyle
+      textStyle,
+      queryTextStyle
     } = styles;
 
     return (
       <Query query={query} variables={{ id: parseInt(this.props.id) }}>
         {({ loading, error, data }) => {
-          if (loading) return <View><Text style={textStyle}>Loading...</Text></View>;
-          if (error) return <View><Text style={textStyle}>Sorry something went wrong. Please try again.</Text></View>;
+          if (loading) return <View><Text style={queryTextStyle}>Loading...</Text></View>;
+          if (error) return <View><Text style={queryTextStyle}>Sorry something went wrong. Please try again.</Text></View>;
 
           return (
             <Card>
@@ -56,6 +57,10 @@ const styles = {
   textStyle: {
     color: '#DADADA',
   },
+  queryTextStyle: {
+    color: '#DADADA',
+    marginLeft: 20,
+  }
 }
 
 export default CarShow;

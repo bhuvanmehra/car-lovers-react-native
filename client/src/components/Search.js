@@ -23,7 +23,10 @@ class Search extends React.Component {
   }
 
   updateMake = (make) => {
-    this.setState({ selectedMake: make })
+    this.setState({
+      selectedMake: make,
+      selectedModel: '',
+    })
   }
 
   updateModel = (model) => {
@@ -33,7 +36,7 @@ class Search extends React.Component {
   onSubmit = (AllMakes) => {
     const { selectedMake, selectedModel } = this.state;
 
-    if ( selectedModel === '' || selectedMake === '') return;
+    if ( selectedModel === '') return;
     let carModels = AllMakes.find(make => make.name === selectedMake);
     let carModel = carModels.models.find(model => model.name === selectedModel);
     Actions.carShow({ id: carModel.id });
@@ -41,13 +44,13 @@ class Search extends React.Component {
 
   render() {
     const { selectedMake, selectedModel } = this.state;
-    const { textStyle } = styles;
+    const { queryTextStyle } = styles;
 
     return (
       <Query query={query}>
         {({ loading, error, data }) => {
-          if (loading) return <View><Text style={textStyle}>Loading...</Text></View>;
-          if (error) return <View><Text style={textStyle}>Sorry something went wrong. Please try again.</Text></View>;
+          if (loading) return <View><Text style={queryTextStyle}>Loading...</Text></View>;
+          if (error) return <View><Text style={queryTextStyle}>Sorry something went wrong. Please try again.</Text></View>;
 
           return (
             <Card>
@@ -72,7 +75,7 @@ class Search extends React.Component {
                   itemTextStyle={{ fontSize: 18, color: 'white' }}
                   selectedValue = {selectedModel} onValueChange = {this.updateModel}
                 >
-                  <Picker.Item label='Please select' value='Please select' />
+                  <Picker.Item label='Please select' value='' />
                   {this.modelOptionItems(data.AllMakes)}
                 </Picker>
               </CardSection>
@@ -105,6 +108,10 @@ const styles = {
   textStyle: {
     color: '#DADADA',
   },
+  queryTextStyle: {
+    color: '#DADADA',
+    marginLeft: 20,
+  }
 };
 
 export default Search;
